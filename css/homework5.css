@@ -42,9 +42,6 @@ body {
 .right {
 	padding: 0 4px;
 }
-.border {
-	border-right: 1px solid #4eabda;
-}
 .box{
 	color: white;
 	background: url("../img/right_box.png") no-repeat;
@@ -157,4 +154,12 @@ footer p{
 	font-weight: 400;
 	text-align: center;
 	color: rgb(204, 204, 204);
+}
+.border:after{
+	content: " ";
+	height: 31px;
+	position: fixed;
+	top: 3px;
+	height: 31px;
+	border-right: 1px solid #4eabda;
 }

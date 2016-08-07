@@ -1,11 +1,7 @@
 @font-face {
 	font-family: 'Helvetica Neue';
-	src: url('../fonts');
-	src: url('../fonts') format('embedded-opentype');
-	url('HelveticaNeue.woff2') format('woff2'),
-	url('HelveticaNeue.woff') format('woff'),
-	url('HelveticaNeue.ttf') format('truetype'),
-	url('HelveticaNeue.svg#HelveticaNeue') format('svg');
+	src: url('../fonts/helveticaneuecyr-light.eot');
+	src: local('☺'), url('../fonts/helveticaneuecyr-light.woff') format('woff'), url('../fonts/helveticaneuecyr-light.ttf') format('truetype'), url('../fonts/helveticaneuecyr-light.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -43,16 +39,20 @@ body {
 }
 .box{
 	color: white;
-	background: url("../img/right_box.png") no-repeat;
-	background-size: cover;
-	border: 1px solid #4299d2;
 }
 .box a{
 	color: white;
 	text-decoration: underline;
 }
 .box a:hover{
-	background-color: transparent;
+	background: transparent;
+}
+.box:hover{
+	background: url("../img/right_box.png") no-repeat;
+	background-size: cover;
+	border: 1px solid #4299d2;
+	height: 35px;
+	padding: 0 3px;
 }
 .container {
 	display: flex;
@@ -99,6 +99,7 @@ body {
 	display: inline-flex;
 }
 .input_menu {
+	margin: 10px 0;
 	color: rgb(204, 204, 204);
 	font-size: 14px;
 	font-weight: 400;
@@ -115,10 +116,14 @@ body {
 	align-self: center;
 }
 form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding: 6px 0;
 }
 .check {
-	width: 518px;
+	margin-right:  10px;
 }
 label{
 	color: rgb(204, 204, 204);
@@ -137,12 +142,17 @@ label{
 	border: 1px solid #4299d2;
 }
 .input_menu:focus {
+	color: rgb(255, 251, 251);
 	background-image: linear-gradient(to top, rgb(27, 82, 136) 0%, rgb(27, 82, 136) 100%);
 	box-shadow: 0 1px 0 rgb(75, 75, 75), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
 }
 .button:active{
 	background-image: linear-gradient(to top, rgb(27, 82, 136) 0%, rgb(27, 82, 136) 100%);
 	box-shadow: 0 1px 0 rgb(75, 75, 75), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.button{
+	cursor: pointer;
+	color: white;
 }
 footer {
 	width: 305px;
@@ -161,6 +171,14 @@ footer p{
 	height: 31px;
 	position: absolute;
 	top: 3px;
-	height: 31px;
 	border-right: 1px solid #4eabda;
+}
+form p {
+	margin: 10px 0;
+	color: rgb(204, 204, 204);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: left;
+	width: 283px;
 }

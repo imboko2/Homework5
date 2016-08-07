@@ -37,6 +37,9 @@ body {
 .right {
 	padding: 0 4px;
 }
+.right a{
+	color: white;
+}
 .box{
 	color: white;
 }

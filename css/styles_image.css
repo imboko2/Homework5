@@ -1,0 +1,37 @@
+.container {
+margin: 0 auto;
+width: 1000px;
+padding-top: 50px;
+}
+td {
+	border: 10px solid black;
+	width: 50px;
+	height: 50px;
+}
+.hidden {
+	border: none;
+}
+.top {
+	border-top: none;
+}
+.left {
+	border-left: none;
+}
+.bot {
+	border-bottom: none;
+}
+.right{
+	border-right: none;
+}
+.yellow {
+	background: yellow;
+}
+.red {
+	background: red;
+}
+.blue{
+	background: blue;
+}
+.black {
+	background: black;
+	opacity: 0.9;

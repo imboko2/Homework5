@@ -52,7 +52,9 @@ body {
 	color: white;
 	text-decoration: underline;
 }
-
+.box a:hover{
+	background-color: transparent;
+}
 .container {
 	display: flex;
 	justify-content: center;

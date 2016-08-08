@@ -142,7 +142,7 @@ form{
 	background: rgba(80,174,219,1);
 	background: linear-gradient(to bottom, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 50%, rgba(46,122,196,1) 99%);
 	border: 1px solid #4a9cd6;
-	border-radius: 5px;
+	border-radius: 2px;
 	cursor: pointer;
 }
 .button:focus{

@@ -139,17 +139,14 @@ form{
 	height: 35px;
 	width:150px;
 	line-height: 35px;
-	border: none;
-	background: url("../img/button2.png") no-repeat;
-	background-size: cover;
+	background: rgba(80,174,219,1);
+	background: linear-gradient(to bottom, rgba(80,174,219,1) 0%, rgba(46,122,196,1) 50%, rgba(46,122,196,1) 99%);
+	border: 1px solid #4a9cd6;
+	border-radius: 5px;
 	cursor: pointer;
 }
 .input_menu:focus {
 	color: rgb(255, 251, 251);
-	background-image: linear-gradient(to top, rgb(27, 82, 136) 0%, rgb(27, 82, 136) 100%);
-	box-shadow: 0 1px 0 rgb(75, 75, 75), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
-}
-.button:active{
 	background-image: linear-gradient(to top, rgb(27, 82, 136) 0%, rgb(27, 82, 136) 100%);
 	box-shadow: 0 1px 0 rgb(75, 75, 75), inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
 }
